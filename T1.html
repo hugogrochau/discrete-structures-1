@@ -194,7 +194,7 @@ $$q_{k+1} = x^{k} + y \cdot q_{k}$$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="k">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
@@ -211,7 +211,7 @@ $$q_{k+1} = x^{k} + y \cdot q_{k}$$</p>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">############&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Testing </span><span class="si">{}</span><span class="s2">(</span><span class="si">{}</span><span class="s2">) = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">__name__</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">expected</span><span class="p">))</span>
     <span class="k">assert</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="o">**</span><span class="n">args</span><span class="p">)</span> <span class="o">==</span> <span class="n">expected</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Passed ✔&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Passed&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Timing...&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> ms average&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">time</span><span class="p">(</span><span class="mi">5000</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="o">**</span><span class="n">args</span><span class="p">)))</span>
 
@@ -246,27 +246,27 @@ $$q_{k+1} = x^{k} + y \cdot q_{k}$$</p>
 <pre>
 ############
 Testing quotient({&apos;y&apos;: 1, &apos;k&apos;: 1, &apos;x&apos;: 1}) = 1
-Passed ✔
+Passed
 Timing...
-0.0019662806464501555 ms average
+0.001978122753594348 ms average
 
 ############
 Testing quotient({&apos;y&apos;: 3, &apos;k&apos;: 3, &apos;x&apos;: 2}) = 19
-Passed ✔
+Passed
 Timing...
-0.0027633775105284685 ms average
+0.0027780463222555956 ms average
 
 ############
 Testing quotient({&apos;y&apos;: 44, &apos;k&apos;: 13, &apos;x&apos;: 25}) = 121857362003096270461
-Passed ✔
+Passed
 Timing...
-0.007088719578759927 ms average
+0.007125369450406004 ms average
 
 ############
 Testing quotient({&apos;y&apos;: 25934, &apos;k&apos;: 45, &apos;x&apos;: 13}) = 162358877787946359759759663874927209666506597868933734599674859328988633858019554383034005259196958461145793061384855160201065218398936939653239445105096646704035207473985676291008769797202076611
-Passed ✔
+Passed
 Timing...
-0.0240418135220776 ms average
+0.02417514408385874 ms average
 </pre>
 </div>
 </div>
@@ -352,7 +352,7 @@ indutivo e prove-o por indução matemática (simples).</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="k">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
@@ -369,7 +369,7 @@ indutivo e prove-o por indução matemática (simples).</p>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">############&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Testing </span><span class="si">{}</span><span class="s2">(</span><span class="si">{}</span><span class="s2">) = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">__name__</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">expected</span><span class="p">))</span>
     <span class="k">assert</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="o">**</span><span class="n">args</span><span class="p">)</span> <span class="o">==</span> <span class="n">expected</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Passed ✔&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Passed&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Timing...&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> ms average&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">time</span><span class="p">(</span><span class="mi">5000</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="o">**</span><span class="n">args</span><span class="p">)))</span>
 
@@ -443,47 +443,47 @@ indutivo e prove-o por indução matemática (simples).</p>
 <pre>
 ############
 Testing number_of_numbers({&apos;k&apos;: 1, &apos;m&apos;: 1}) = [[1]]
-Passed ✔
+Passed
 Timing...
-0.002275879365648696 ms average
+0.00227942463675089 ms average
 
 ############
 Testing number_of_numbers({&apos;k&apos;: 1, &apos;m&apos;: 2}) = [[1], [2]]
-Passed ✔
+Passed
 Timing...
-0.0024668273393540366 ms average
+0.002415914109421582 ms average
 
 ############
 Testing number_of_numbers({&apos;k&apos;: 2, &apos;m&apos;: 2}) = [[1, 2], [2, 1]]
-Passed ✔
+Passed
 Timing...
-0.004857877923470934 ms average
+0.0047157354661032935 ms average
 
 ############
 Testing number_of_numbers({&apos;k&apos;: 3, &apos;m&apos;: 3}) = [[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]
-Passed ✔
+Passed
 Timing...
-0.012936978801466536 ms average
+0.013166314248321953 ms average
 
 ############
 Testing number_of_numbers({&apos;k&apos;: 3, &apos;m&apos;: 5}) = [[1, 2, 3], [1, 2, 4], [1, 2, 5], [1, 3, 2], [1, 3, 4], [1, 3, 5], [1, 4, 2], [1, 4, 3], [1, 4, 5], [1, 5, 2], [1, 5, 3], [1, 5, 4], [2, 1, 3], [2, 1, 4], [2, 1, 5], [2, 3, 1], [2, 3, 4], [2, 3, 5], [2, 4, 1], [2, 4, 3], [2, 4, 5], [2, 5, 1], [2, 5, 3], [2, 5, 4], [3, 1, 2], [3, 1, 4], [3, 1, 5], [3, 2, 1], [3, 2, 4], [3, 2, 5], [3, 4, 1], [3, 4, 2], [3, 4, 5], [3, 5, 1], [3, 5, 2], [3, 5, 4], [4, 1, 2], [4, 1, 3], [4, 1, 5], [4, 2, 1], [4, 2, 3], [4, 2, 5], [4, 3, 1], [4, 3, 2], [4, 3, 5], [4, 5, 1], [4, 5, 2], [4, 5, 3], [5, 1, 2], [5, 1, 3], [5, 1, 4], [5, 2, 1], [5, 2, 3], [5, 2, 4], [5, 3, 1], [5, 3, 2], [5, 3, 4], [5, 4, 1], [5, 4, 2], [5, 4, 3]]
-Passed ✔
+Passed
 Timing...
-0.05126680269458315 ms average
+0.0516459566380548 ms average
 Timing number_of_numbers with m=5 k=3...
-0.051912454836164294 ms average
+0.05170363476552402 ms average
 Timing number_of_numbers with m=5 k=4...
-0.14280002284800367 ms average
+0.1427062819305306 ms average
 Timing number_of_numbers with m=5 k=5...
-0.28253376278465275 ms average
+0.2812623052258536 ms average
 Timing number_of_numbers with m=7 k=5...
-3.1210986267166043 ms average
+2.875215641173088 ms average
 Timing number_of_numbers with m=10 k=5...
-30.303030303030305 ms average
+28.089887640449437 ms average
 Timing number_of_numbers with m=11 k=4...
-6.693440428380187 ms average
+6.20347394540943 ms average
 Timing number_of_numbers with m=11 k=5...
-55.55555555555556 ms average
+50.505050505050505 ms average
 Timing number_of_numbers with m=11 k=6...
 384.61538461538464 ms average
 Timing number_of_numbers with m=12 k=6...
@@ -491,7 +491,7 @@ Timing number_of_numbers with m=12 k=6...
 Timing number_of_numbers with m=13 k=7...
 5000.0 ms average
 Timing number_of_numbers with m=13 k=7...
-10.592981 s 
+10.653366 s 
 </pre>
 </div>
 </div>
@@ -637,7 +637,7 @@ equipe diferente em cada rodada.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">collections</span>
@@ -660,7 +660,7 @@ equipe diferente em cada rodada.</p>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">############&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Testing </span><span class="si">{}</span><span class="s2">(</span><span class="si">{}</span><span class="s2">) = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">__name__</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">expected</span><span class="p">))</span>
     <span class="k">assert</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="o">**</span><span class="n">args</span><span class="p">)</span> <span class="o">==</span> <span class="n">expected</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Passed ✔&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Passed&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Formatted output:&quot;</span><span class="p">)</span>
     <span class="n">pretty_print_rounds</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="o">**</span><span class="n">args</span><span class="p">))</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Timing...&quot;</span><span class="p">)</span>
@@ -740,16 +740,16 @@ equipe diferente em cada rodada.</p>
 <pre>
 ############
 Testing tournament_generator({&apos;s&apos;: 1, &apos;k&apos;: 1}) = [[(1, 2)]]
-Passed ✔
+Passed
 Formatted output:
 ### Round 1 ###
 Team 1 vs Team 2
 Timing...
-0.0019159723502198195 ms average
+0.0019077700038269867 ms average
 
 ############
 Testing tournament_generator({&apos;s&apos;: 1, &apos;k&apos;: 2}) = [[(1, 2), (3, 4)], [(1, 3), (2, 4)], [(1, 4), (2, 3)]]
-Passed ✔
+Passed
 Formatted output:
 ### Round 1 ###
 Team 1 vs Team 2
@@ -761,11 +761,11 @@ Team 2 vs Team 4
 Team 1 vs Team 4
 Team 2 vs Team 3
 Timing...
-0.007692248521165222 ms average
+0.007429685456836499 ms average
 
 ############
 Testing tournament_generator({&apos;s&apos;: 1, &apos;k&apos;: 3}) = [[(1, 2), (3, 4), (5, 6), (7, 8)], [(1, 3), (2, 4), (5, 7), (6, 8)], [(1, 4), (2, 3), (5, 8), (6, 7)], [(1, 5), (2, 6), (3, 7), (4, 8)], [(1, 8), (2, 5), (3, 6), (4, 7)], [(1, 7), (2, 8), (3, 5), (4, 6)], [(1, 6), (2, 7), (3, 8), (4, 5)]]
-Passed ✔
+Passed
 Formatted output:
 ### Round 1 ###
 Team 1 vs Team 2
@@ -803,27 +803,27 @@ Team 2 vs Team 7
 Team 3 vs Team 8
 Team 4 vs Team 5
 Timing...
-0.021672323143006992 ms average
+0.02091945174300872 ms average
 Timing tournament_generator with k=4...
-0.057830210501966225 ms average
+0.0573855158957879 ms average
 Timing tournament_generator with k=5...
-0.16122271305581531 ms average
+0.1621060822202049 ms average
 Timing tournament_generator with k=6...
-0.48477797168896647 ms average
+0.4801690194948622 ms average
 Timing tournament_generator with k=7...
-1.9282684149633629 ms average
+1.9364833462432223 ms average
 Timing tournament_generator with k=8...
-7.246376811594203 ms average
+7.898894154818326 ms average
 Timing tournament_generator with k=9...
-30.48780487804878 ms average
+31.25 ms average
 Timing tournament_generator with k=10...
-119.04761904761905 ms average
+131.57894736842104 ms average
 Timing tournament_generator with k=11...
-454.54545454545456 ms average
+500.0 ms average
 Timing tournament_generator with k=12...
-1.904464 s 
+2.087176 s 
 Timing tournament_generator with k=13...
-8.020683 s 
+8.682202 s 
 </pre>
 </div>
 </div>
